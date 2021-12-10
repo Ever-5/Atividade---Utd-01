@@ -8,16 +8,16 @@
             <input type="text" name="qtd">
             <button type="submit">click</button>            
         </form>
-        <form name="form2" action="questao8.php" method="post">
+        <form name="form2" action="questao9.php" method="post">
             <?php
                 if (isset($_POST["qtd"])){
                     $qtd = $_POST["qtd"];
                     for($i=1;$i<=$qtd;$i++){
-                        echo '<label>'.$i.''.'número</label>';
+                        echo '<label>Informe o nome '.$i.' '.'da lista</label>';
                         echo '<input style="margin-bottom: 10px"type="text" name="'.$i.'n"> <br>';
                         
                     }
-                    echo '<button type="submit">Visualizar maioridade.</button>';
+                    echo '<button type="submit">Mostrar nomes</button>';
                 }        
             ?>
         </form>
