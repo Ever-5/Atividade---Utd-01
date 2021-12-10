@@ -1,21 +1,11 @@
 <?php
-    if($_POST["1n"] > $_POST["2n"]){
-        $maior = $_POST["1n"];
-    }else{
-        $maior = $_POST["2n"];
+    $i = 1;
+    foreach($_POST as $idade){
+        if($idade >= 18){
+            echo 'A pessoa de número '.$i.' é maior de idade<br>';
+        }else{
+            echo 'A pessoa de número '.$i.' é menor de idade<br>';
+        }
+        $i++;
     }
-
-    if($maior < $_POST["3n"]){
-        $maior = $_POST["3n"];
-    }
-
-    if($maior < $_POST["4n"]){
-        $maior = $_POST["4n"];
-    }
-
-    if($maior < $_POST["5n"]){
-        $maior = $_POST["5n"];
-    }
-
-    echo "O maior é ".$maior;
 ?>

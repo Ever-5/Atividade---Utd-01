@@ -3,15 +3,23 @@
         <title>Questão 6</title>
     </head>
     <body>
-        <form name="form1" action="questao7.php" method="post">
-        <?php
-            for($i=1;$i<=5;$i++){
-                echo '<label>'.$i.''.'número</label>';
-                echo '<input style="margin-bottom: 10px"type="text" name="'.$i.'n"> <br>';
-            }
-            
-        ?>
-            <button type="submit" value="submit"> Enviar </button>
+        <form name="form1" action="q.php" method="post">
+            <label> Quantas idades você quer pegar?</label>
+            <input type="text" name="qtd">
+            <button type="submit">click</button>            
+        </form>
+        <form name="form2" action="questao8.php" method="post">
+            <?php
+                if (isset($_POST["qtd"])){
+                    $qtd = $_POST["qtd"];
+                    for($i=1;$i<=$qtd;$i++){
+                        echo '<label>'.$i.''.'número</label>';
+                        echo '<input style="margin-bottom: 10px"type="text" name="'.$i.'n"> <br>';
+                        
+                    }
+                    echo '<button type="submit">Visualizar maioridade.</button>';
+                }        
+            ?>
         </form>
     </body>
 </html>
