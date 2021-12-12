@@ -1,10 +1,10 @@
 <html>
     <head>
-        <title>Questão 6</title>
+        <title>Questão 9</title>
     </head>
     <body>
         <form name="form1" action="index.php" method="post">
-            <label> Quantas idades você quer pegar?</label>
+            <label> Quantas nomes você quer pegar?</label>
             <input type="text" name="qtd">
             <button type="submit">click</button>            
         </form>

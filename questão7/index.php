@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Questão 6</title>
+        <title>Questão 7</title>
     </head>
     <body>
         <form name="form1" action="questao7.php" method="post">
